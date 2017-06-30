@@ -9,3 +9,6 @@
 2.convolution_net:卷积神经网络</br>
   训练时，使用dropout；预测时，不用dropout</br>
   测试集准确率：0.976562</br>
+3.lstm:Long Short Term Memory</br>
+  一层的lstm，其中的结点数为128</br>
+  测试集准确率：0.984375</br>
