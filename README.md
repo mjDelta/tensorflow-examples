@@ -6,3 +6,6 @@
   wieghts&biases初始化：高斯分布</br>
   optimizer:AdamOptimizer</br>
   测试集准确率：0.942</br>
+2.convolution_net:卷积神经网络</br>
+  训练时，使用dropout；预测时，不用dropout</br>
+  测试集准确率：0.976562</br>
