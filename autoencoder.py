@@ -18,7 +18,7 @@ mnist=input_data.read_data_sets("MNIST_data",one_hot=True)
 Model Defination
 """
 lr=0.01
-training_epochs=10
+training_epochs=20
 batch_size=256
 display_step=1
 examples_to_show=10
