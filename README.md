@@ -22,3 +22,7 @@
 5.dynamic_lstm:</br>
 >输入数据长度不一致，动态获得LSTM Cell中的outputs.</br>
 测试机准确率：0.788</br>
+
+6.AutoEncoder:自编码器</br>
+>无监督学习：encoder类似图片压缩，decoder类似图片解压;输入输出都是X(图片)</br>
+示例图片：左边为decoder后的，右边为原始图片</br>
