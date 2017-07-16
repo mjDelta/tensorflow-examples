@@ -26,5 +26,4 @@
 6.AutoEncoder:自编码器</br>
 >无监督学习：encoder类似图片压缩，decoder类似图片解压;输入输出都是X(图片)</br>
 示例图片：左边为decoder后的，右边为原始图片</br>
-![image](https://github.com/mjDelta/tensorflow-examples/blob/master/imgs/figure_1.PNG)
-![image](https://github.com/mjDelta/tensorflow-examples/blob/master/imgs/figure_2.PNG)</br>
+![image](https://github.com/mjDelta/tensorflow-examples/blob/master/imgs/figure_1.PNG)</br>
