@@ -29,3 +29,9 @@
 示例图片：左边为decoder后的，右边为原始图片</br>
 ![image](https://github.com/mjDelta/tensorflow-examples/blob/master/imgs/figure_1.PNG)</br>
 AutoEncoder功能：降维，降噪</br>
+
+7.Save and Restore:保存和恢复模型</br>
+>保存文件后缀：.ckpt</br>
+saver定义：tf.train.Saver()</br>
+保存操作:saver.save(sess,path)</br>
+恢复操作：saver.restore(sess,path)</br>
