@@ -36,7 +36,8 @@ saver定义：tf.train.Saver()</br>
 保存操作:saver.save(sess,path)</br>
 恢复操作：saver.restore(sess,path)</br>
 
-8.tensorboard base:</br>
+8.tensorboard:</br>
 >命令：tensorboard --logdir=/tmp/tensorflow_logs</br>
 tensorboard可视化summary信息</br>
 tensorboard可视化网络详细结构</br>
+![image](https://github.com/mjDelta/tensorflow-examples/blob/master/imgs/tensorboard.PNG)</br>
