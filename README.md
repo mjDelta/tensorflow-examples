@@ -37,5 +37,5 @@ saver定义：tf.train.Saver()</br>
 恢复操作：saver.restore(sess,path)</br>
 
 8.tensorboard base:</br>
->tensorboard可视化summary信息
+>tensorboard可视化summary信息</br>
 tensorboard可视化网络详细结构
