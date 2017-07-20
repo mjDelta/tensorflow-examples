@@ -54,4 +54,13 @@ tensorboard可视化网络详细结构</br>
 
 9.linear regression:</br>
 >简单线性回归</br>
+目标函数：y=wx+b</br>
+optimizer:梯度下降更新w，b</br>
+cost:定义损失为MSE，在此处可以将损失定义扩展MAE等，进行鲁棒回归定义等</br>
 练习来源：https://github.com/sjchoi86/Tensorflow-101</br>
+
+10.logistic regression：</br>
+>逻辑回归</br>
+在线性回归的基础上加上激活函数sigmoid或softmax</br>
+sigmoid适用于二分类情况的激活函数</br>
+softmax适用于多分类的激活函数</br>
