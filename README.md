@@ -53,5 +53,5 @@ tensorboard可视化网络详细结构</br>
 练习来源：https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/ </br>
 
 9.linear regression:</br>
->简单线性回归
+>简单线性回归</br>
 练习来源：https://github.com/sjchoi86/Tensorflow-101</br>
