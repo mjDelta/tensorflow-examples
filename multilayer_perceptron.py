@@ -14,7 +14,8 @@ keep_prob=0.5
 
 #Network Parameters
 n_hidden_1=256 #1st layer number of features
-n_hidden_2=256#2nd layer number of features
+n_hidden_2=512#2nd layer number of features
+n_hidden_3=256
 n_input=784#MNIST data input(img shape:28*28)
 n_classes=10#MNIST total classes(0-9 digits)
 
@@ -25,19 +26,22 @@ y=tf.placeholder("float",[None,n_classes])
 weights={
 	"h1":tf.Variable(tf.random_normal([n_input,n_hidden_1])),
 	"h2":tf.Variable(tf.random_normal([n_hidden_1,n_hidden_2])),
-	"out":tf.Variable(tf.random_normal([n_hidden_2,n_classes]))
+  "h3":tf.Variable(tf.random_normal([n_hidden_2,n_hidden_3])),
+	"out":tf.Variable(tf.random_normal([n_hidden_3,n_classes]))
 }
 biases={
 	"b1":tf.Variable(tf.random_normal([n_hidden_1])),
 	"b2":tf.Variable(tf.random_normal([n_hidden_2])),
+  "b3":tf.Variable(tf.random_normal([n_hidden_3])),
 	"out":tf.Variable(tf.random_normal([n_classes]))
 }
 #create model
 def multilayer_perceptron(x,weights,biases):
   layer1=tf.nn.relu(tf.matmul(x,weights['h1'])+biases['b1'])
   layer2=tf.nn.relu(tf.matmul(layer1,weights["h2"])+biases["b2"])
-  layer2=tf.nn.dropout(layer2,keep_prob)
-  out_layer=tf.matmul(layer2,weights["out"])+biases["out"]
+  layer3=tf.nn.relu(tf.matmul(layer2,weights["h3"])+biases["b3"])
+  layer3=tf.nn.dropout(layer3,keep_prob)
+  out_layer=tf.matmul(layer3,weights["out"])+biases["out"]
   return out_layer
 #construct model
 pred=multilayer_perceptron(x,weights,biases)
