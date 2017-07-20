@@ -8,8 +8,8 @@
   测试集准确率：0.942</br>
   调参技巧：增加了dropout操作，之后效果很不好，准确率0.17左右；改变weights初始化的stddev后（stddev=0.05），准确率0.97！！！</br>
   练习来源：https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/ </br>
+  练习来源：https://github.com/sjchoi86/Tensorflow-101</br>
 
-  
 2.convolution_net:卷积神经网络</br>
   >训练时，使用dropout；预测时，不用dropout</br>
   测试集准确率：0.976562</br>
