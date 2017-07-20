@@ -10,6 +10,7 @@ lr=0.001
 training_epochs=15
 batch_size=100
 display_step=1
+keep_prob=0.5
 
 #Network Parameters
 n_hidden_1=256 #1st layer number of features
@@ -33,10 +34,11 @@ biases={
 }
 #create model
 def multilayer_perceptron(x,weights,biases):
-	layer1=tf.nn.relu(tf.matmul(x,weights['h1'])+biases['b1'])
-	layer2=tf.nn.relu(tf.matmul(layer1,weights["h2"])+biases["b2"])
-	out_layer=tf.matmul(layer2,weights["out"])+biases["out"]
-	return out_layer
+  layer1=tf.nn.relu(tf.matmul(x,weights['h1'])+biases['b1'])
+  layer2=tf.nn.relu(tf.matmul(layer1,weights["h2"])+biases["b2"])
+  layer2=tf.nn.dropout(layer2,keep_prob)
+  out_layer=tf.matmul(layer2,weights["out"])+biases["out"]
+  return out_layer
 #construct model
 pred=multilayer_perceptron(x,weights,biases)
 #define loss and optimizer
