@@ -26,10 +26,10 @@ keep_prob=tf.placeholder("float")
 stddev=0.05
 #store layers weights & biases
 weights={
-	"h1":tf.Variable(tf.random_normal([n_input,n_hidden_1],stddev=stddev)),
-	"h2":tf.Variable(tf.random_normal([n_hidden_1,n_hidden_2],stddev=stddev)),
-  "h3":tf.Variable(tf.random_normal([n_hidden_2,n_hidden_3],stddev=stddev)),
-	"out":tf.Variable(tf.random_normal([n_hidden_3,n_classes],stddev=stddev))
+	"h1":tf.get_variable("h1",shape=[n_input,n_hidden_1],initializer=tf.contrib.layers.xavier_initializer(uniform=False)),
+	"h2":tf.get_variable("h2",shape=[n_hidden_1,n_hidden_2],initializer=tf.contrib.layers.xavier_initializer(uniform=False)),
+  "h3":tf.get_variable("h3",shape=[n_hidden_2,n_hidden_3],initializer=tf.contrib.layers.xavier_initializer(uniform=False)),
+	"out":tf.get_variable("out",shape=[n_hidden_3,n_classes],initializer=tf.contrib.layers.xavier_initializer(uniform=False))
 }
 biases={
 	"b1":tf.Variable(tf.random_normal([n_hidden_1])),
