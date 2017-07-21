@@ -14,8 +14,7 @@
   >训练时，使用dropout；预测时，不用dropout</br>
   测试集准确率：0.976562</br>
   可视化卷积层的效果如下：</br>
-  ![image](https://github.com/mjDelta/tensorflow-examples/blob/master/imgs/conv1_0.PNG)</br>
-  ![image](https://github.com/mjDelta/tensorflow-examples/blob/master/imgs/conv1_1.PNG)</br>
+  ![image](https://github.com/mjDelta/tensorflow-examples/blob/master/imgs/conv1_0.PNG)
   ![image](https://github.com/mjDelta/tensorflow-examples/blob/master/imgs/conv1_2.PNG)</br>
   练习来源：https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/ </br>
 
