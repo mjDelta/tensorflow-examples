@@ -109,27 +109,21 @@ with tf.Session() as sess:
 	#out=sess.run(conv_out["out"],feed_dict={x:mnist.test.images[0:1]})
 
   """Process Visualization"""
-
-
-
   plt.matshow(x[0, :, :, 0], cmap=plt.get_cmap('gray'))
   plt.title("Input:Label of this image is "+str(np.argmax(mnist.test.labels[0, :])))
   plt.colorbar()
 
-
-  plt.matshow(conv1[0, :, :, 0], cmap=plt.get_cmap('gray'))
-  plt.title("conv1:Label of this image is "+str(np.argmax(mnist.test.labels[0, :])))
-  plt.colorbar()
-
-
-
-  plt.matshow(conv2[0, :, :, 0], cmap=plt.get_cmap('gray'))
-  plt.title("conv2:Label of this image is "+str(np.argmax(mnist.test.labels[0, :])))
-  plt.colorbar()
-
-
-
-  plt.matshow(pool2[0, :, :, 0], cmap=plt.get_cmap('gray'))
-  plt.title("pool2:Label of this image is "+str(np.argmax(mnist.test.labels[0, :])))
-  plt.colorbar()
+  for i in range(3):
+    
+    plt.matshow(conv1[0, :, :, i], cmap=plt.get_cmap('gray'))
+    plt.title("conv1:Label of this image is "+str(np.argmax(mnist.test.labels[0, :]))+"channel "+str(i))
+    plt.colorbar() 
+  
+    #plt.matshow(conv2[0, :, :, i], cmap=plt.get_cmap('gray'))
+    #plt.title("conv2:Label of this image is "+str(np.argmax(mnist.test.labels[0, :]))+"channel "+str(i))
+    #plt.colorbar()  
+   
+    #plt.matshow(pool2[0, :, :, i], cmap=plt.get_cmap('gray'))
+    #plt.title("pool2:Label of this image is "+str(np.argmax(mnist.test.labels[0, :]))+"channel "+str(i))
+    #plt.colorbar()
   plt.show()
