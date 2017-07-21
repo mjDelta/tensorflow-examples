@@ -6,7 +6,7 @@
   wieghts&biases初始化：高斯分布，weights初始化的stddev=0.05</br>
   optimizer:AdamOptimizer</br>
   测试集准确率：0.942</br>
-  调参技巧：增加了dropout操作，之后效果很不好，准确率0.17左右；改变weights初始化的stddev后（stddev=0.05），准确率0.97！！！</br>
+  调参技巧：增加了dropout操作，之后效果很不好，准确率0.17左右；改变weights初始化的stddev后（stddev=0.05），准确率0.97！！！估计是由于0.05接近Xavier初始化的stddev（2/(Nin+Nout)）</br>
   练习来源：https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/ </br>
   练习来源：https://github.com/sjchoi86/Tensorflow-101</br>
 
