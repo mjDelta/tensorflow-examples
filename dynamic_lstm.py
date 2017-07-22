@@ -2,8 +2,6 @@ from __future__ import print_function
 import tensorflow as tf
 import random
 
-
-
 class ToySequenceData(object):
   def __init__(self,n_samples=1000,max_seq_len=20,min_seq_len=3,max_value=1000):
     self.data=[]
@@ -33,8 +31,6 @@ class ToySequenceData(object):
     batch_seq=self.seqlen[self.batch_id:min(self.batch_id+batch_size,len(self.seqlen))]
     self.batch_id=min(self.batch_id+batch_size,len(self.data)) 
     return batch_data,batch_labels,batch_seq
-
-
 
 lr=0.01
 training_iters=1000000
@@ -110,66 +106,4 @@ with tf.Session() as sess:
   test_data=testset.data
   test_label=testset.labels
   test_seq=testset.seqlen
-  print("Testing Accuracy:",sess.run(accuracy,feed_dict={x:test_data,y:test_label,seqlen:test_seq}))
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              
-            
+  print("Testing Accuracy:",sess.run(accuracy,feed_dict={x:test_data,y:test_label,seqlen:test_seq}))         
