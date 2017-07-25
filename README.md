@@ -68,3 +68,6 @@ cost:定义损失为MSE，在此处可以将损失定义扩展MAE等，进行鲁
 在线性回归的基础上加上激活函数sigmoid或softmax</br>
 sigmoid适用于二分类情况的激活函数</br>
 softmax适用于多分类的激活函数</br>
+
+11.seq2seq:LSTM处理部分linux源代码</br>
+>1.将chars转成index
