@@ -71,3 +71,12 @@ softmax适用于多分类的激活函数</br>
 
 11.seq2seq:LSTM处理部分linux源代码</br>
 >1.将chars转成index
+
+12.dae:denoising auto encoder</br>
+>input:corrupted pictures(add noisy data)</br>
+label:original pictures</br>
+![image](https://github.com/mjDelta/tensorflow-examples/blob/master/imgs/epoch0.PNG)</br>
+![image](https://github.com/mjDelta/tensorflow-examples/blob/master/imgs/epoch10.PNG)</br>
+![image](https://github.com/mjDelta/tensorflow-examples/blob/master/imgs/epoch20.PNG)</br>
+![image](https://github.com/mjDelta/tensorflow-examples/blob/master/imgs/epoch30.PNG)</br>
+![image](https://github.com/mjDelta/tensorflow-examples/blob/master/imgs/epoch40.PNG)</br>
