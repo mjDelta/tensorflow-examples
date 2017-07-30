@@ -1,5 +1,5 @@
 # tensorflow-examples
-经典tensorflow的实现例子</br>
+Classical Tensorflow Examples on DeepLearning</br>
 1.multilayer_perceptron:多层感知机对MNIST手写数字集进行训练识别。</br>
 >网络结构：一层输入层，三层隐藏层，一层输出层</br>
   激活函数：Relu</br>
