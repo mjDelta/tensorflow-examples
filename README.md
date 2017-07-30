@@ -7,7 +7,7 @@ Classical Tensorflow Examples on DeepLearning
   Initialisation(wieghts&biases )：Gaussian Distribution(0,0.05)</br>
   Optimizer:AdamOptimizer</br>
   Test Dataset Accuracy:0.942</br>
-  Tuning Ticks:Weights Initialisation is very important.When stddev is 0.05,its accuracy gets 0.97!!!Guess it is close to 'Xavier' Initialisation('2/(Nin+Nout')</br>
+  Tuning Ticks:Weights Initialisation is very important.When stddev is 0.05,its accuracy gets 0.97!!!Guess it is close to `Xavier` Initialisation(`2/(Nin+Nout`)</br>
   From:https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/ </br>
   From:https://github.com/sjchoi86/Tensorflow-101</br>
 
