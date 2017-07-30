@@ -35,7 +35,7 @@ Test Dataset Accuracy:0.788</br>
 From:https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/ </br>
 
 6.AutoEncoder:</br>
->Unsupervised Learning:Both Input and Output is pictures(Non-Label).</br>
+>`Unsupervised Learning`:Both Input and Output is pictures(`Non-Label`).</br>
 Visualisation:left is after decoder's picture,right is the original picture</br>
 ![image](https://github.com/mjDelta/tensorflow-examples/blob/master/imgs/figure_1.PNG)</br>
 From:https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/ </br>
