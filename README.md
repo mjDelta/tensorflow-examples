@@ -1,7 +1,7 @@
 # tensorflow-examples
 Classical Tensorflow Examples on DeepLearning
 ---------------------------------------------
-1.multilayer_perceptron:train dataset:MNIST</br>
+1.<a href="https://github.com/mjDelta/tensorflow-examples/blob/master/multilayer_perceptron.py">multilayer_perceptron</a>:train dataset:MNIST</br>
 >Initialisation(wieghts&biases )：`Gaussian Distribution(0,0.05)`</br>
   Test Dataset Accuracy:0.942</br>
   `Tuning Ticks`:Weights Initialisation is very important.When stddev is 0.05,its accuracy gets 0.97!!!Guess it is close to `Xavier` Initialisation(`2/(Nin+Nout`)</br>
