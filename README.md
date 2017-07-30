@@ -69,7 +69,5 @@ From:https://github.com/sjchoi86/Tensorflow-101</br>
 >input:`corrupted` pictures(add noisy data)</br>
 label:`original` pictures</br>
 ![image](https://github.com/mjDelta/tensorflow-examples/blob/master/imgs/epoch0.PNG)</br>
-![image](https://github.com/mjDelta/tensorflow-examples/blob/master/imgs/epoch10.PNG)</br>
 ![image](https://github.com/mjDelta/tensorflow-examples/blob/master/imgs/epoch20.PNG)</br>
-![image](https://github.com/mjDelta/tensorflow-examples/blob/master/imgs/epoch30.PNG)</br>
 ![image](https://github.com/mjDelta/tensorflow-examples/blob/master/imgs/epoch40.PNG)</br>
