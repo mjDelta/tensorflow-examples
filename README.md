@@ -69,3 +69,9 @@ From:https://github.com/sjchoi86/Tensorflow-101</br>
 >input:`corrupted` pictures(add noisy data)</br>
 label:`original` pictures</br>
 ![image](https://github.com/mjDelta/tensorflow-examples/blob/master/imgs/epoch40.PNG)</br>
+
+13.<a href="https://github.com/mjDelta/tensorflow-examples/blob/master/cae.py">dae</a>:denoising auto encoder with conv and deconv</br>
+>`enconder`:use convolution
+`decoder`:use transpose convolution(deconvolution)
+![image](https://github.com/mjDelta/tensorflow-examples/blob/master/imgs/cae5.png)</br>
+
