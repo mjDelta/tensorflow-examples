@@ -11,9 +11,6 @@ Classical Tensorflow Examples on DeepLearning
 2.<a href="https://github.com/mjDelta/tensorflow-examples/blob/master/convolution_net.py">convolution_net</a>:</br>
   >`Ticks`:When training,use dropout.When predicting,don't use dropout.</br>
   Test Dataset Accuracy:0.976562</br>
-  Visualisation:</br>
-  ![image](https://github.com/mjDelta/tensorflow-examples/blob/master/imgs/conv1_1.PNG)
-  ![image](https://github.com/mjDelta/tensorflow-examples/blob/master/imgs/conv1_2.PNG)</br>
   From:https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/ </br>
 	From:https://github.com/sjchoi86/Tensorflow-101</br>
 
@@ -68,7 +65,6 @@ From:https://github.com/sjchoi86/Tensorflow-101</br>
 12.<a href="https://github.com/mjDelta/tensorflow-examples/blob/master/dae.py">dae</a>:denoising auto encoder</br>
 >input:`corrupted` pictures(add noisy data)</br>
 label:`original` pictures</br>
-![image](https://github.com/mjDelta/tensorflow-examples/blob/master/imgs/epoch40.PNG)</br>
 
 13.<a href="https://github.com/mjDelta/tensorflow-examples/blob/master/cae.py">cae</a>:denoising auto encoder with conv and deconv</br>
 >`enconder`:use `convolution`</br>
